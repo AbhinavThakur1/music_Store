@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "643581601200",
+    "project_id": "music-and-money",
+    "storage_bucket": "music-and-money.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643581601200:android:b3b02b446b2d6bedf26275",
+        "android_client_info": {
+          "package_name": "com.example.musicandmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643581601200-2ilt6s4pd9r2h8qe20kn708qe8efgdbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyc3Y1yZjNynhI3vU0WQdu7olIthsRZhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643581601200-2ilt6s4pd9r2h8qe20kn708qe8efgdbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

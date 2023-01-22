@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EveryMusicActivity"
+    android:background="#0A2647">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEveryMusic"
+        android:background="@drawable/toolbar_bg"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:background="#00337C"
+        app:layout_constraintTop_toBottomOf="@id/toolbarEveryMusic">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#00337C"
+        app:layout_constraintBottom_toTopOf="@id/everyMusicSearchedHandler"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_text"
+            android:hint="@string/text_email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:background="@drawable/login_bg"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/everyMusicHandler"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarEveryMusic"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/everyMusicSearchedHandler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarEveryMusic"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/NoData"
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/toolbarEveryMusic"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewEveryMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:background="#00337C"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/EveryMusicPlayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music_name"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/MusicTimeCounterEvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_00"
+                    android:textSize="26sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <SeekBar
+                    android:id="@+id/MusicSeekBarEvery"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/MusicEndTimeEvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_3_00"
+                    android:textSize="26sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/PreviousSongEvery"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/music_icon_bg"
+                    android:contentDescription="@string/last_music"
+                    android:src="@drawable/last_song" />
+
+                <ImageButton
+                    android:id="@+id/PLayingEvery"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/play"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/last_music"
+                    android:background="@drawable/music_icon_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/NextSongEvery"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/next_music"
+                    android:contentDescription="@string/last_music"
+                    android:background="@drawable/music_icon_bg"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

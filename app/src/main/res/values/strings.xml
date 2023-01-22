@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Music Store</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up_to_keep_your_data_safe_online">Sign Up to Keep your data safe online and access all the music files uploaded by users around the world.</string>
+    <string name="text_password">Password</string>
+    <string name="text_email">Email</string>
+    <string name="text_name">Name</string>
+    <string name="text_confirm">Confirm</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="my_profile">My Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="earn_money">Earn Money</string>
+    <string name="music_name">Music name</string>
+    <string name="last_music">Last Music</string>
+    <string name="name">Name</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="image">Image</string>
+    <string name="_0_00">0.00</string>
+    <string name="_3_00">3.00</string>
+    <string name="music_from_every_user">Music from Every User</string>
+    <string name="local">Local</string>
+    <string name="online_store">Online Store</string>
+    <string name="online">Online</string>
+    <string name="play_lists">Play Lists</string>
+    <string name="add">Add</string>
+    <string name="play_list_name">Play List Name</string>
+    <string name="every_music">Every Music</string>
+    <string name="playlist_songs">PlayList Songs</string>
+    <string name="song_name">Song Name</string>
+    <string name="search">Search</string>
+    <string name="no_song">No Song</string>
+    <string name="local_music">Local Music</string>
+    <string name="online_music">Online Music</string>
+    <string name="no_data">No Data</string>
+</resources>
